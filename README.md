@@ -52,7 +52,7 @@ night-light/
 
 ## Notes
 
-This is a lightweight learning project and is intentionally simple. It is a great starting point for experimenting with Bevy and expanding the game with features like:
+This project is for learning purposes and is intentionally simple. It is a great starting point for experimenting with Bevy and expanding the game with features like:
 
 - obstacle generation
 - collision detection
