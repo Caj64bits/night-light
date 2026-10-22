@@ -16,14 +16,11 @@ This project was created to learn Rust and Bevy while exploring game development
 
 ## Gameplay
 
-- Press Space to flap upward
-- Avoid the obstacles
+- Press Space to jump upward
+- Avoid the pips
 - Survive as long as possible
 
-## Requirements
-
-- Rust and Cargo installed
-- A system capable of running Bevy applications
+Basically flappy bird
 
 ## Run the game
 
@@ -50,16 +47,9 @@ night-light/
 - Rust
 - Bevy 0.20.0
 
-## Notes
-
-This project is for learning purposes and is intentionally simple. It is a great starting point for experimenting with Bevy and expanding the game with features like:
-
+## Todos
 - obstacle generation
 - collision detection
 - score tracking
 - start/game-over screens
 - sound effects and polish
-
-## License
-
-This project does not currently include a license file.
