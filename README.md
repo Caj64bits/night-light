@@ -16,8 +16,6 @@ This project was created to learn Rust and Bevy while exploring game development
 
 ## Personal milestone
 
-This project reached an early playable milestone:
-
 - created the game window using Bevy
 - spawned a character as a circle on screen
 - made the character move with simple physics
