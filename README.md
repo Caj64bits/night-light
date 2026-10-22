@@ -4,7 +4,7 @@ A small Flappy Bird-inspired game built with Rust and Bevy as a learning project
 
 ## Overview
 
-Night Light is a simple arcade game where the player controls a glowing orb that flies upward with each tap/press, while gravity pulls it back down. The goal is to weave through gaps in oncoming obstacles without crashing.
+Night Light is a simple arcade game where the player controls a glowing orb that flies upward with each tap/press, while gravity pulls it back down. The goal is to weave through gaps in oncoming obstacles.
 
 This project was created to learn Rust and Bevy while exploring game development fundamentals such as:
 
@@ -13,6 +13,15 @@ This project was created to learn Rust and Bevy while exploring game development
 - input handling
 - basic 2D rendering
 - physics-like movement
+
+## Personal milestone
+
+This project reached an early playable milestone:
+
+- created the game window using Bevy
+- spawned a character as a circle on screen
+- made the character move with simple physics
+- added keyboard input so the player can jump with Space
 
 ## Gameplay
 
