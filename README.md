@@ -1,5 +1,16 @@
 # Night Light
 
+<!--toc:start-->
+- [Night Light](#night-light)
+  - [Overview](#overview)
+  - [Personal milestone](#personal-milestone)
+  - [Gameplay](#gameplay)
+  - [Run the game](#run-the-game)
+  - [Project structure](#project-structure)
+  - [Dependencies](#dependencies)
+  - [Todos](#todos)
+<!--toc:end-->
+
 A small Flappy Bird-inspired game built with Rust and Bevy as a learning project.
 
 ## Overview
@@ -55,6 +66,7 @@ night-light/
 - Bevy 0.20.0
 
 ## Todos
+
 - obstacle generation
 - collision detection
 - score tracking

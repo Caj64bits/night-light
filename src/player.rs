@@ -1,3 +1,4 @@
+use crate::theme;
 use bevy::prelude::*;
 
 pub struct PlayerPlugin;
@@ -10,22 +11,24 @@ impl Plugin for PlayerPlugin {
 }
 
 #[derive(Component)]
-struct Player;
+pub(crate) struct Player;
 
 #[derive(Component)]
 struct Velocity(Vec2);
+
+pub(crate) const PLAYER_RADIUS: f32 = 20.0;
 
 fn spawn(
     mut commands: Commands,
     mut mesh: ResMut<Assets<Mesh>>,
     mut material: ResMut<Assets<ColorMaterial>>,
 ) {
-    let start_pos: Vec2 = Vec2::new(-100.0, -100.0);
+    let start_pos: Vec2 = Vec2::new(-500.0, 300.0);
     commands.spawn((
         Player,
         Velocity(Vec2::ZERO),
-        Mesh2d(mesh.add(Circle::new(20.0))),
-        MeshMaterial2d(material.add(Color::srgb(0.75, 0.79, 0.96))),
+        Mesh2d(mesh.add(Circle::new(PLAYER_RADIUS))),
+        MeshMaterial2d(material.add(theme::Default::WHITE)),
         Transform::from_xyz(start_pos.x, start_pos.y, 1.0),
     ));
 }
@@ -39,7 +42,7 @@ fn update(
     let jump_force: f32 = 300.0;
 
     for (mut transform, mut velocity) in &mut query {
-        if input.pressed(KeyCode::Space) {
+        if input.just_pressed(KeyCode::Space) {
             velocity.0.y = jump_force;
         }
 
